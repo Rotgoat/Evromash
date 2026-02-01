@@ -196,6 +196,7 @@ html {
 }
 
 body {
+  padding-top: env(safe-area-inset-top);
   min-width: 22.5rem;
   color: var(--textPrimary);
   background-color: var(--bgBody);
