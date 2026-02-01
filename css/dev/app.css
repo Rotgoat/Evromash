@@ -193,6 +193,9 @@ h6 {
 
 html {
   scroll-behavior: smooth;
+  padding-top: 4.375rem;
+  top: -4.375rem;
+  position: relative;
 }
 
 body {
