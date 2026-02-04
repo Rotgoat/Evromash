@@ -876,7 +876,6 @@ textarea.input {
 .tel-input {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
   border: 0.0625rem solid var(--ctrBorder);
   background-color: var(--white);
   border-radius: 1.75rem;
@@ -893,6 +892,7 @@ textarea.input {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  margin-right: 0.5rem;
 }
 .tel-input__country {
   flex: 0 0 1.5rem;
