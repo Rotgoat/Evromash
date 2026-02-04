@@ -2312,6 +2312,7 @@ body::after {
 .product-thumbs-slider__slide {
   border: 0.0625rem solid var(--ctrBorder);
   aspect-ratio: 142/124;
+  overflow: hidden;
 }
 .product-thumbs-slider__slide.swiper-slide-thumb-active {
   border: 0.125rem solid var(--textAccent);
