@@ -876,6 +876,7 @@ textarea.input {
 .tel-input {
   display: flex;
   align-items: center;
+  gap: 0.5rem;
   border: 0.0625rem solid var(--ctrBorder);
   background-color: var(--white);
   border-radius: 1.75rem;
@@ -892,7 +893,6 @@ textarea.input {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  margin-right: 0.25rem;
 }
 .tel-input__country {
   flex: 0 0 1.5rem;
@@ -906,7 +906,6 @@ textarea.input {
   height: auto;
   color: var(--textSecondary);
   outline: none;
-  padding-left: 0.5rem;
 }
 .tel-input__input:focus-within {
   outline: none;
@@ -4274,6 +4273,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .policy__link {
     font-size: 0.875rem;
     line-height: 1.42;
+  }
+  .tel-input {
+    gap: 1rem;
   }
   .breadcrumbs__list {
     gap: 0.75rem;
