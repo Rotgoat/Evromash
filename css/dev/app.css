@@ -2306,6 +2306,9 @@ body::after {
   right: 1.5rem;
 }
 
+.product-thumbs-slider__slider {
+  padding-bottom: 0.25rem;
+}
 .product-thumbs-slider__slide {
   border: 0.0625rem solid var(--ctrBorder);
   aspect-ratio: 142/124;
