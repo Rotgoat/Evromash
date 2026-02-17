@@ -4003,14 +4003,15 @@ function formInit() {
   }
   formSubmit();
   formFieldsInit();
-  const getCallInput = document.getElementById("get-call-tel");
+  const getCallInput = document.querySelectorAll("[data-input-mask]");
   const getCallInputMask = {
     mask: "(00) 000-00-00",
     lazy: false,
     placeholderChar: "X"
   };
-  const mask = IMask(getCallInput, getCallInputMask);
-  console.log(mask.value);
+  getCallInput.forEach((input) => {
+    IMask(input, getCallInputMask);
+  });
 }
 document.querySelector("[data-fls-form]") ? window.addEventListener("load", formInit) : null;
 const marquee = () => {
