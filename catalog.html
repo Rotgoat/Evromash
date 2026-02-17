@@ -12,8 +12,8 @@
 		<link rel="preload" href="./assets/fonts/WixMadeforDisplay-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 		<link rel="shortcut icon" href="./assets/img/favicon.ico">
 		<title>catalog</title>
-		<script type="module" crossorigin="" src="./js/app.min.js?v=1770234744918"></script>
-		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1770234744918">
+		<script type="module" crossorigin="" src="./js/app.min.js?v=1771351023741"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1771351023741">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -659,7 +659,7 @@
 					</div>
 				</div>
 			</div>
-			<div data-fls-popup="get-call-popup" aria-hidden="true" class="popup popup-call">
+			<div data-fls-popup="get-call-popup" aria-hidden="true" class="popup popup-m">
 				<div data-fls-popup-wrapper="" class="popup__wrapper">
 					<div data-fls-popup-body="" class="popup__body">
 						<button data-fls-popup-close="" type="button" class="popup__close --icon-cross"></button>
@@ -684,7 +684,90 @@
 											</div>
 											<div class="tel-input__nums">+375</div>
 										</div>
-										<input class="form__input tel-input__input input" id="get-call-tel" data-fls-input="" placeholder="" type="text" name="tel" autocomplete="off" required>
+										<input class="form__input tel-input__input input" data-input-mask="" id="get-call-tel" data-fls-input="" placeholder="" type="text" name="tel" autocomplete="off" required>
+									</div>
+								</fieldset>
+								<button type="submit" class="form__btn-submit btn btn--fw">Отправить</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div data-fls-popup="get-offer-popup" aria-hidden="true" class="popup popup-m">
+				<div data-fls-popup-wrapper="" class="popup__wrapper">
+					<div data-fls-popup-body="" class="popup__body">
+						<button data-fls-popup-close="" type="button" class="popup__close --icon-cross"></button>
+						<div data-fls-popup-content="" class="popup__content">
+							<h5 class="popup__title">Получить предложение</h5>
+							<div class="popup__text">
+								Оставьте свои контактные данные — мы подготовим для вас персональное предложение по данной позиции.
+							</div>
+							<form data-fls-form="" class="popup__form form-offer form">
+								<fieldset class="form__fieldset form__fieldset--required">
+									<legend class="form__legend">Позиция</legend>
+									<label for="get-offer-position" class="form__label">Позиция</label>
+									<input disabled class="form__input input" id="get-offer-position" data-fls-input="" placeholder="Как к вам обращаться?" value="Фреза дорожная ЕМ600" type="text">
+								</fieldset>
+								<fieldset class="form__fieldset">
+									<legend class="form__legend">Ваше имя</legend>
+									<label for="get-offer-name" class="form__label">Ваше имя</label>
+									<input class="form__input input" id="get-offer-name" data-fls-input="" placeholder="Как к вам обращаться?" type="text" name="name" autocomplete="name" required>
+								</fieldset>
+								<fieldset class="form__fieldset">
+									<legend class="form__legend">Компания</legend>
+									<label for="get-offer-company" class="form__label">Компания</label>
+									<input class="form__input input" id="get-offer-company" data-fls-input="" placeholder="Ваша организация" type="text" name="offer-company">
+								</fieldset>
+								<fieldset class="form__fieldset form__fieldset--required">
+									<legend class="form__legend">Номер телефона</legend>
+									<label for="get-offer-tel" class="form__label">Номер телефона</label>
+									<div class="form__tel-input tel-input">
+										<div class="tel-input__code">
+											<div class="tel-input__country">
+												<img src="./assets/img/countries/belarus.png" alt="Image">
+											</div>
+											<div class="tel-input__nums">+375</div>
+										</div>
+										<input data-input-mask="" class="form__input tel-input__input input" id="get-offer-tel" data-fls-input="" placeholder="" type="text" name="tel" autocomplete="off" required>
+									</div>
+								</fieldset>
+								<fieldset class="form__fieldset form__fieldset--required">
+									<legend class="form__legend">Электронная почта</legend>
+									<label for="get-offer-mail" class="form__label">Электронная почта</label>
+									<input class="form__input input" id="get-offer-mail" data-fls-input="" placeholder="@domain.com" type="email" name="email" autocomplete="email" required>
+								</fieldset>
+								<button type="submit" class="form__btn-submit btn btn--fw">Отправить</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div data-fls-popup="get-call-offer-popup" aria-hidden="true" class="popup popup-m">
+				<div data-fls-popup-wrapper="" class="popup__wrapper">
+					<div data-fls-popup-body="" class="popup__body">
+						<button data-fls-popup-close="" type="button" class="popup__close --icon-cross"></button>
+						<div data-fls-popup-content="" class="popup__content">
+							<h5 class="popup__title">Заказать звонок</h5>
+							<div class="popup__text">
+								Оставьте свои контактные данные — мы перезвоним вам в ближайшее время и ответим на все вопросы.
+							</div>
+							<form data-fls-form="" class="popup__form form-call form">
+								<fieldset class="form__fieldset form__fieldset--required">
+									<legend class="form__legend">Позиция</legend>
+									<label for="get-call-offer-position" class="form__label">Позиция</label>
+									<input disabled class="form__input input" id="get-call-offer-position" data-fls-input="" placeholder="Как к вам обращаться?" value="Фреза дорожная ЕМ600" type="text">
+								</fieldset>
+								<fieldset class="form__fieldset form__fieldset--required">
+									<legend class="form__legend">Номер телефона</legend>
+									<label for="get-call-offer-tel" class="form__label">Номер телефона</label>
+									<div class="form__tel-input tel-input">
+										<div class="tel-input__code">
+											<div class="tel-input__country">
+												<img src="./assets/img/countries/belarus.png" alt="Image">
+											</div>
+											<div class="tel-input__nums">+375</div>
+										</div>
+										<input data-input-mask="" class="form__input tel-input__input input" id="get-call-offer-tel" data-fls-input="" placeholder="" type="text" autocomplete="off" name="tel" required>
 									</div>
 								</fieldset>
 								<button type="submit" class="form__btn-submit btn btn--fw">Отправить</button>
